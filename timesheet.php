@@ -9,7 +9,7 @@ Get month to show (current as default)
 @var string $period
 **/
 $period = $args['period']??date('m', time());
-@define(PERIOD, $period);
+@define("PERIOD", $period);
 /**
 Set the regex rule to find start value for daily activities
 @const string PERIOD_REGEX
@@ -36,8 +36,6 @@ Set task separator simble
 CONST TASK_SEPARATOR = "|";
 
 $tasks = [];
-
-//CONST SORT = "desc";
 
 /**
 Get file rows for elaboration
@@ -297,6 +295,10 @@ function getPeriodRegex($period){
 	return sprintf(PERIOD_REGEX, $period);
 }
 
+/**
+Show daily total time
+@return void
+**/
 function showDailyTotal(){
 	global $dayTotalTime;
 	
