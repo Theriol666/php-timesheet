@@ -13,7 +13,7 @@ All'interno del file "timesheet.php", a riga 46, è possibile impostare il perco
 
 Usando il file timesheet.txt di esempio si notano delle sezioni specifiche per ciascuna riga:
 - ################################################## > usato come stacco per dividere i vari mesi (ignorato in fase di elaborazione, è solo di abbellimento);
-- [04/29 09:15] > questa è la riga che usa lo script per capire che sta per elaborare una giornata e ne ricava la data (04/29) tramite regex;
+- [11/24 09:15] > questa è la riga che usa lo script per capire che sta per elaborare una giornata e ne ricava la data (11/24) tramite regex;
 - Progetto 1: @smartworking: attività svolta: 3h | #secondaAttività: attivtà svolta: 1h > questa riga da indicazione di tutte le attività svolte, con relative tempistiche, di un progetto ("Progetto 1"). Lo script da questa riga capirà quale è il progetto a cui abbiamo assegnato le ore e le userà per fare un conteggio totale. Inserendo il simbolo del cancelletto (#) lo script riconoscerà che questo è l'identificativo di un task e alla fine dell'elaborazione terrà conto del conteggio di tutte le ore per questo specifico task.
 
 E' possibile aggiunge quanti progetti si vogliono, purché questi siano uno per riga, come riportato nel file timesheet.txt.
@@ -45,7 +45,7 @@ clear
 TIMESHEET_FILE_TEXT="/abs/path/to/timesheet/timesheet.txt"
 TIMESHEET_FILE_PHP="/abs/path/to/timesheet/timesheet.php"
 nano "${TIMESHEET_FILE_TEXT}"
-php7.4 "${TIMESHEET_FILE_PHP}" #period=09
+php "${TIMESHEET_FILE_PHP}" #period=09
 `````
 
 **Windows:**
