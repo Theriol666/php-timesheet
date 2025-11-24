@@ -9,7 +9,7 @@ Si tratta di uno script in PHP che interpreta il file timesheet.txt al fine di r
 ## Come funziona?
 Lo script analizza il file e da esso ricava alcune informazioni, quali: progetto, ore segnate per ciasuna attività, calcolo di queste ore, mese di riferimento. Al fine di una corretta lettura il file di testo deve seguire un certo formato.
 
-All'interno del file "timesheet.php", a riga 46, è possibile impostare il percorso del file da importare (al momento si aspetta che il file sia nella stessa cartella dello script PHP).
+All'interno del file "timesheet.php", a riga 38, è possibile impostare il percorso del file da importare (al momento si aspetta che il file sia nella stessa cartella dello script PHP).
 
 Usando il file timesheet.txt di esempio si notano delle sezioni specifiche per ciascuna riga:
 - ################################################## > usato come stacco per dividere i vari mesi (ignorato in fase di elaborazione, è solo di abbellimento);
