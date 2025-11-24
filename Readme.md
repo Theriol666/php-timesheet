@@ -4,7 +4,7 @@
 Si tratta di uno script in PHP che interpreta il file timesheet.txt al fine di ricavare da esso la somma delle ore svolte nei vari progetti; e formattare le attività segnate in ciascuna riga al fine di eseguire un copia-incolla delle informazioni.
 
 ## Cosa richiede?
-- PHP 7.4
+- PHP >= 7.4
 
 ## Come funziona?
 Lo script analizza il file e da esso ricava alcune informazioni, quali: progetto, ore segnate per ciasuna attività, calcolo di queste ore, mese di riferimento. Al fine di una corretta lettura il file di testo deve seguire un certo formato.
